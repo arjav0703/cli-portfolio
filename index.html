@@ -3,75 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CLI-Portfolio</title>
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: #dcdcdc;
-            font-family: 'Courier New', monospace;
-            margin: 0;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        #terminal {
-            width: 100%;
-            height: 100vh;
-            border: 1px solid #444;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            position: relative;
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        #outline {
-            margin-bottom: 20px;
-            white-space: pre-wrap;
-        }
-
-        .input-line {
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .prompt {
-            color: #62c855;
-            margin-right: 10px;
-        }
-
-
-
-
-        #input {
-            background: #2d2d2d;
-            border: none;
-            color: #dcdcdc;
-            font-family: 'Courier New', monospace;
-            font-size: 16px;
-            flex-grow: 1;
-            outline: none;
-            padding: 10px;
-            border-radius: 4px;
-        }
-
-        .background-text {
-            position: absolute;
-            color: rgba(255, 255, 255, 0.1);
-            pointer-events: none;
-            font-size: 16px;
-            left: 200px;
-            top: 50%;
-            transform: translateY(-50%);
-            white-space: nowrap;
-            padding-left: 15px;
-        }
-
-        #input:focus {
-            background: #3e3e3e;
-            transition: background 0.3s;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="terminal">
