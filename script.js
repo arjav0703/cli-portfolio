@@ -9,7 +9,7 @@ const command = {
 const commandResponses = {
    
     'about': `AHOY SAILOR!
-I am a passionate developer focused on web technologies.
+I am a 14 year old who loves to explore like a sailor.
 `,
 
     'projects': `\nMy Projects:\n\n
