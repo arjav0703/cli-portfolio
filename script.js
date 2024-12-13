@@ -49,7 +49,7 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter
 
 `,
     'cheese':` 
-< hi >
+< ! AHOY SAILOR ! This is a sign for you to contact me >
  ----
    \
     \
