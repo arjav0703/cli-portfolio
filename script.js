@@ -3,7 +3,9 @@ const command = {
     'about':  'about me',
     'projects':  'my projects',
     'contact':  'contact info',
-    'pwd':  'print working dir'
+    'pwd':  'print working dir',
+    'neofetch': 'show system stats'
+    
 
 };
 
@@ -23,6 +25,29 @@ GitHub: https://github.com/arjav0703
     
 `,
     'pwd': `/home/arjav/portfolio`,
+    'neofetch': `            .-/+oossssoo+/-.               lily@mydesktop 
+        :+ssssssssssssssssss+:           -------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.1 LTS x86_64 
+    .ossssssssssssssssssdMMMNysssso.       Host: OptiPlex 7040 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.8.0-49-generic 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 1 day, 3 hours, 33 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 3156 (dpkg), 54 (flatpak), 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 46.0 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Cold Metal [GTK2/3] 
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: candy-icons [GTK2/3] 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal 
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel i5-6500T (4) @ 3.100GHz 
+    .ossssssssssssssssssdMMMNysssso.       GPU: Intel HD Graphics 530 
+      -+sssssssssssssssssyyyssss+-         Memory: 5248MiB / 15750MiB 
+        :+ssssssssssssssssss+:
+            .-/+oossssoo+/-.                                       
+                                                                   
+
+`
 
 };
 
@@ -55,6 +80,8 @@ input.addEventListener('keydown', function(e) {
         } else if (commandResponses[command]) {
             outline.innerHTML += commandResponses[command] + '\n';
         } else if (command === 'pwd') {
+            outline.innerHTML += commandResponses[command] +'\n';
+        } else if (command === 'neofetch') {
             outline.innerHTML += commandResponses[command] +'\n';
         } else {
             outline.innerHTML += `'${command}' Permission denied.\n`;
