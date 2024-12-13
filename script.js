@@ -3,6 +3,7 @@ const command = {
     'about':  'about me',
     'projects':  'my projects',
     'contact':  'contact info',
+    'pwd':  'print working dir'
 
 };
 
@@ -21,6 +22,7 @@ Email: arjavjain0703@gmail.com
 GitHub: https://github.com/arjav0703
     
 `,
+    'pwd': `/home/arjav/portfolio`,
 
 };
 
@@ -52,8 +54,8 @@ input.addEventListener('keydown', function(e) {
 
         } else if (commandResponses[command]) {
             outline.innerHTML += commandResponses[command] + '\n';
-        } else if (command === '') {
-            outline.innerHTML += '\n';
+        } else if (command === 'pwd') {
+            outline.innerHTML += commandResponses[command] +'\n';
         } else {
             outline.innerHTML += `'${command}' Permission denied.\n`;
         }
