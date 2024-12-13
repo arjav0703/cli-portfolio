@@ -4,8 +4,8 @@ const acommand = {
     'projects':  'my projects',
     'contact':  'contact info',
     'pwd':  'print working dir',
-    'neofetch': 'show system stats'
-    
+    'neofetch': 'show system stats',
+    'cheese': 'a cute message'
 
 };
 
@@ -47,8 +47,30 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter
             .-/+oossssoo+/-.                                       
                                                                    
 
+`,
+    'cheese':` 
+< hi >
+ ----
+   \
+    \
+      _____   _________
+     /     \_/         |
+    |                 ||
+    |                 ||
+   |    ###\  /###   | |
+   |     0  \/  0    | |
+  /|                 | |
+ / |        <        |\ \
+| /|                 | | |
+| |     \_______/   |  | |
+| |                 | / /
+/||                 /|||
+   ----------------|
+        | |    | |
+        ***    ***
+       /___\  /___\
 `
-
+,
 };
 
 const terminal = document.getElementById('terminal');
@@ -82,6 +104,8 @@ input.addEventListener('keydown', function(e) {
         } else if (command === 'pwd') {
             outline.innerHTML += commandResponses[command] +'\n';
         } else if (command === 'neofetch') {
+            outline.innerHTML += commandResponses[command] +'\n';
+        } else if (command === 'cheese') {
             outline.innerHTML += commandResponses[command] +'\n';
         } else {
             outline.innerHTML += `'${command}' Permission denied. Are you root?\n`;
