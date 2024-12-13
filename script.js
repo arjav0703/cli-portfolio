@@ -1,4 +1,4 @@
-const command = {
+const acommand = {
     'help': 'Show available commands',
     'about':  'about me',
     'projects':  'my projects',
@@ -31,7 +31,7 @@ GitHub: https://github.com/arjav0703
     .ossssssssssssssssssdMMMNysssso.       Host: OptiPlex 7040 
    /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.8.0-49-generic 
   +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 1 day, 3 hours, 33 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 3156 (dpkg), 54 (flatpak), 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 3156 (dpkg), 54 (flatpak)
 .ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21 
 +sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080 
 ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 46.0 
@@ -39,10 +39,10 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter
 +sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
 .ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Cold Metal [GTK2/3] 
  /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: candy-icons [GTK2/3] 
-  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: kitty
    /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel i5-6500T (4) @ 3.100GHz 
     .ossssssssssssssssssdMMMNysssso.       GPU: Intel HD Graphics 530 
-      -+sssssssssssssssssyyyssss+-         Memory: 5248MiB / 15750MiB 
+      -+sssssssssssssssssyyyssss+-         Memory: 2314MiB / 15750MiB 
         :+ssssssssssssssssss+:
             .-/+oossssoo+/-.                                       
                                                                    
@@ -72,7 +72,7 @@ input.addEventListener('keydown', function(e) {
         
         if (command === 'help') {
             let helpText = 'Available commands:\n\n';
-            for (const [cmd, desc] of Object.entries(commands)) {
+            for (const [cmd, desc] of Object.entries(acommand)) {
                 helpText += `${cmd.padEnd(10)} - ${desc}\n`;
             }
             outline.innerHTML += helpText + '\n';
@@ -84,7 +84,7 @@ input.addEventListener('keydown', function(e) {
         } else if (command === 'neofetch') {
             outline.innerHTML += commandResponses[command] +'\n';
         } else {
-            outline.innerHTML += `'${command}' Permission denied.\n`;
+            outline.innerHTML += `'${command}' Permission denied. Are you root?\n`;
         }
 
         terminal.scrollTop = terminal.scrollHeight;
