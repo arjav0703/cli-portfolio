@@ -11,7 +11,7 @@ const acommand = {
 
 const commandResponses = {
    
-    'about': `AHOY SAILOR!
+    'about': `HOY SAILOR!
 I am a 14 year old who loves to explore like a sailor.
 `,
 
@@ -25,27 +25,27 @@ GitHub: https://github.com/arjav0703
     
 `,
     'pwd': `/home/arjav/portfolio`,
-    'neofetch': `            .-/+oossssoo+/-.               lily@mydesktop 
-        :+ssssssssssssssssss+:           -------------- 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.1 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: OptiPlex 7040 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.8.0-49-generic 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 1 day, 3 hours, 33 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 3156 (dpkg), 54 (flatpak)
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 46.0 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Cold Metal [GTK2/3] 
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: candy-icons [GTK2/3] 
-  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: kitty
-   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel i5-6500T (4) @ 3.100GHz 
-    .ossssssssssssssssssdMMMNysssso.       GPU: Intel HD Graphics 530 
-      -+sssssssssssssssssyyyssss+-         Memory: 2314MiB / 15750MiB 
-        :+ssssssssssssssssss+:
-            .-/+oossssoo+/-.                                       
-                                                                   
+    'neofetch': `
+            .-/+oossssoo+/-.               ╭─  Ubuntu 24.04.1 LTS x86_64 
+        :+ssssssssssssssssss+:           ├─  6.8.0-49-generic 
+      -+ssssssssssssssssssyyssss+-         ├─  lily 
+    .ossssssssssssssssssdMMMNysssso.       ├─󰏗  3159 (dpkg), 54 (flatpak), 17 (snap) 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      ╰─  bash 5.2.21 
+  +ssssssssshmydMMMMMMMNddddyssssssss+
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    ╭─  Hyprland 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   ├─  kitty 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   ╭─  OptiPlex 7040 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   ├─󰍛  Intel i5-6500T (4) @ 3.1GHz [45.0°on] 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   ├─󰍹  Intel HD Graphics 530 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   ├─  i915 
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    ├─  1920x1080 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     ├─  1.73GiB / 15.38GiB (11%) 
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      ├─  (/)  57G / 231G (26%) 
+    .ossssssssssssssssssdMMMNysssso.       ╰─󰄉  2 days, 15 mins 
+      -+sssssssssssssssssyyyssss+-         
+         :+ssssssssssssssssss+:
+            .-/+oossssoo+/-.
 
 `,
     'cheese':` 
